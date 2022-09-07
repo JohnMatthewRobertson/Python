@@ -14,8 +14,8 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /code
 
 # install dependencies
-COPY Pipfile Pipfile.lock /code/
+COPY django_development/Pipfile django_development/Pipfile.lock /code/
 RUN pip install pipenv && pipenv install --system
 
 # copy project
-COPY . /code/
+COPY django_development /code/
