@@ -37,8 +37,10 @@ Microsoft Windows [Version 10.0.19044.1949]
 (django_development-N3L5-HHl) D:\github_projects\Python\django\django_development>
 ```
 
+start django project
 
 django-admin startproject config .
+
 
 python manage.py migrate
 
@@ -93,12 +95,43 @@ control container that uses docker image
 
 create docker-compose.yaml
 
-start container 
+start container in detached mode (-d)
 
-docker-compose up 
+docker-compose up -d
+
+view logs 
+
+docker-compose logs
 
 confirm working 
 
 http://127.0.0.1:8000/ or http://localhost:8000/ 
 
+
+
+docker-compose exec <service_name> not container name
+
 stop container control+c or docker-compose down
+
+creaete super user on docker container 
+
+```
+docker-compose exec django_container python /code/django_development/manage.py createsuperuser
+```
+
+install postgres python plugin into container
+
+docker-compose exec django pipenv install psycopg2
+
+rebuild container
+
+docker-compose up -d --build
+
+migarte database 
+
+docker-compose exec django_container python manage.py migrate
+
+docker-compose exec django_container python /code/django_development/manage.py createsuperuser
+
+
+

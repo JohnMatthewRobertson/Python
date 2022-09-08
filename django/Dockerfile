@@ -10,12 +10,12 @@ ENV PYTHONDONTWRITEBYTECODE 1
 # ensure python does not writte .pyc files
 ENV PYTHONUNBUFFERED 1
 
-# set working directory within image
+# set working directory of the image
 WORKDIR /code
 
-# install dependencies
-COPY django_development/Pipfile django_development/Pipfile.lock /code/
+# copy project folder inot working directory of the image
+COPY django_development /code/
+
+# install dependencies 
 RUN pip install pipenv && pipenv install --system
 
-# copy project
-COPY django_development /code/
