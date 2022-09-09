@@ -144,7 +144,7 @@ and also must be run from same directory as docker-compose.yaml
 creaete super user on docker container 
 
 ```
-docker-compose exec django python /code/django_development/manage.py createsuperuser
+docker-compose exec django python manage.py createsuperuser
 ```
 
 install postgres python plugin into container
@@ -162,19 +162,36 @@ docker-compose up -d --build
 migarte database 
 
 ```
-docker-compose exec django python /code/django_development/manage.py migrate
+docker-compose exec django python manage.py migrate
 ```
+
 
 create admin user for database
 
 ```
-docker-compose exec django python /code/django_development/manage.py createsuperuser
+docker-compose exec django python manage.py createsuperuser
 ```
 
 add custom user model to docker
 
 ```
-docker-compose exec django python /code/django_development/manage.py startapp accounts
+docker-compose exec django python manage.py startapp accounts
 ```
 
+acccounts
 
+change ```models.py```
+
+config
+
+change ```settings.py```
+
+migrate database 
+
+```
+docker-compose exec django python manage.py makemigrations accounts
+```
+
+```
+docker-compose exec django python manage.py migrate
+```

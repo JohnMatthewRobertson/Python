@@ -4,7 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: 'python /code/django_development/manage.py runserver 0.0.0.0:${DJANGO_CONTAINER_PORT}'
+    working_dir: /code/django_development
+    command: 'python manage.py runserver 0.0.0.0:${DJANGO_CONTAINER_PORT}'
     ports:
       - ${DJANGO_HOST_PORT}:${DJANGO_CONTAINER_PORT}
     volumes:
