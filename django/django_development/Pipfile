@@ -7,6 +7,10 @@ name = "pypi"
 django = "*"
 psycopg2 = "*"
 django-environ = "*"
+pylint = "*"
+flake8 = "*"
+bandit = "*"
+safety = "*"
 
 [dev-packages]
 

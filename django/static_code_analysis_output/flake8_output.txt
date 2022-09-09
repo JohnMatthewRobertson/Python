@@ -1,0 +1,7 @@
+./django_development\config\settings.py:107:80: E501 line too long (91 > 79 characters)
+./django_development\config\settings.py:110:80: E501 line too long (81 > 79 characters)
+./django_development\config\settings.py:113:80: E501 line too long (82 > 79 characters)
+./django_development\config\settings.py:116:80: E501 line too long (83 > 79 characters)
+./django_development\home\admin.py:1:1: F401 'django.contrib.admin' imported but unused
+./django_development\home\models.py:1:1: F401 'django.db.models' imported but unused
+./django_development\home\tests.py:1:1: F401 'django.test.TestCase' imported but unused

@@ -1,0 +1,14 @@
+************* Module manage
+django_development\manage.py:11:8: C0415: Import outside toplevel (django.core.management.execute_from_command_line) (import-outside-toplevel)
+************* Module home.admin
+django_development\home\admin.py:4:0: W0611: Unused admin imported from django.contrib (unused-import)
+************* Module home.models
+django_development\home\models.py:4:0: W0611: Unused models imported from django.db (unused-import)
+************* Module home.tests
+django_development\home\tests.py:4:0: W0611: Unused TestCase imported from django.test (unused-import)
+************* Module home.views
+django_development\home\views.py:9:19: W0613: Unused argument 'request' (unused-argument)
+
+------------------------------------------------------------------
+Your code has been rated at 9.12/10 (previous run: 8.95/10, +0.18)
+

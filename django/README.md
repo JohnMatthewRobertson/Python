@@ -35,9 +35,31 @@ D:\github_projects\Python\django\django_development>
 
 # python linters
 
-black, autopep8, yapf, pylint, flake8, bandit, safety
+flake8
 
-https://github.com/wsvincent/djangoforprofessionals
+```
+flake8 ./django_development --exclude=.env > static_code_analysis_output/flake8_output.txt
+```
+
+pylint 
+
+```
+pylint ./django_development --ignore=.env > static_code_analysis_output/pylint_output.txt
+```
+
+safety
+
+```
+safety check > static_code_analysis_output/safety_output.txt
+```
+
+bandit
+
+```
+bandit -r ./django_development > static_code_analysis_output/bandit_output.txt
+```
+
+
 
 # django
 
