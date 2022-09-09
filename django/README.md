@@ -195,3 +195,9 @@ docker-compose exec django python manage.py makemigrations accounts
 ```
 docker-compose exec django python manage.py migrate
 ```
+
+docker tests
+
+```
+docker-compose exec django python manage.py test
+```
