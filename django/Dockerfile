@@ -13,7 +13,7 @@ ENV PYTHONUNBUFFERED 1
 # set working directory of the image
 WORKDIR /code
 
-# copy project folder inot working directory of the image
+# copy project folder into working directory of the image
 COPY django_development /code/
 
 # install dependencies 

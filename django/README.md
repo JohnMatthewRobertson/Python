@@ -139,7 +139,7 @@ http://127.0.0.1:8000/ or http://localhost:8000/
 
 docker-compose exec <service_name> not container name
 
-stop container control+c or docker-compose down
+and also must be run from same directory as docker-compose.yaml
 
 creaete super user on docker container 
 
@@ -169,6 +169,12 @@ create admin user for database
 
 ```
 docker-compose exec django python /code/django_development/manage.py createsuperuser
+```
+
+add custom user model to docker
+
+```
+docker-compose exec django python /code/django_development/manage.py startapp accounts
 ```
 
 
