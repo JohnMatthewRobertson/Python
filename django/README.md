@@ -1,30 +1,16 @@
 # django_development
 
-```
-C:\>docker --version
-Docker version 20.10.17, build 100c701
-```
-
-```
-C:\>python --version
-Python 3.9.7
-```
-
-## resources 
+# resources 
 
 * Django for Professionals Production websites with Python & Django (3.1) (William S. Vincent)
 
-black, autopep8, yapf, pylint, flake8, bandit, safety
+# virtual environment 
 
-https://github.com/wsvincent/djangoforprofessionals
+install pipenv 
 
-virtualenv , venv , pipenv
-
-
-https://pypi.org/project/pipenv/
+```
 pip install pipenv
-
-pipenv install django
+```
 
 virtual environment start 
 
@@ -37,44 +23,6 @@ Microsoft Windows [Version 10.0.19044.1949]
 (django_development-N3L5-HHl) D:\github_projects\Python\django\django_development>
 ```
 
-start django project
-
-django-admin startproject config .
-
-
-python manage.py migrate
-
-python manage.py runserver
-
-```
-Watching for file changes with StatReloader
-Performing system checks...
-
-System check identified no issues (0 silenced).
-September 07, 2022 - 21:02:12
-Django version 4.1.1, using settings 'config.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
-```
-
-control+c
-
-create app
-
-python manage.py startapp home
-
-config
-
-add new apps to config/settings.py under INSTALLED_APPS = []
-
-add new apps to config/urls.py under urlpatterns = []
-
-home
-
-add a new file urls.py 
-
-update views.py
-
 virtual environment end
 
 ```
@@ -85,11 +33,65 @@ Aborted!
 D:\github_projects\Python\django\django_development>
 ```
 
+# python linters
+
+black, autopep8, yapf, pylint, flake8, bandit, safety
+
+https://github.com/wsvincent/djangoforprofessionals
+
+# django
+
+install django
+
+```
+pipenv install django
+```
+
+start django project
+
+```
+django-admin startproject config .
+```
+
+migrate database
+
+```
+python manage.py migrate
+```
+
+run django test server
+
+```
+python manage.py runserver
+```
+
+create app
+
+```
+python manage.py startapp home
+```
+
+edit the app config
+
+add new apps to ```config/settings.py``` under ```INSTALLED_APPS = []```
+
+add new apps to ```config/urls.py``` under ```urlpatterns = []```
+
+edit the app home
+
+add a new file ```urls.py``` 
+
+update ```views.py```
+
+# docker 
+
 create Dockerfile 
 
 build docker image 
 
+```
 docker build .
+```
 
 control container that uses docker image
 
@@ -97,11 +99,15 @@ create docker-compose.yaml
 
 start container in detached mode (-d)
 
+```
 docker-compose up -d
+```
 
 view logs 
 
+```
 docker-compose logs
+```
 
 confirm working 
 
@@ -116,22 +122,31 @@ stop container control+c or docker-compose down
 creaete super user on docker container 
 
 ```
-docker-compose exec django_container python /code/django_development/manage.py createsuperuser
+docker-compose exec django python /code/django_development/manage.py createsuperuser
 ```
 
 install postgres python plugin into container
 
+```
 docker-compose exec django pipenv install psycopg2
+```
 
 rebuild container
 
+```
 docker-compose up -d --build
+```
 
 migarte database 
 
-docker-compose exec django_container python manage.py migrate
+```
+docker-compose exec django python /code/django_development/manage.py migrate
+```
 
-docker-compose exec django_container python /code/django_development/manage.py createsuperuser
+create admin user for database
 
+```
+docker-compose exec django python /code/django_development/manage.py createsuperuser
+```
 
 

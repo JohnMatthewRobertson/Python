@@ -10,22 +10,26 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import environ
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+env = environ.Env()
+environ.Env.read_env()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-l$8q_@%m)q+r4uj7!1dhrk&!$ib9&*4)5qb+5n2+-%k8(2d)i*'
+SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env("DJANGO_DEBUG")
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = [env("DJANGO_HOSTS")]
 
 
 # Application definition
@@ -86,15 +90,13 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_development_db',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST':'postgres_container',
-        'PORT': 5432
+        'NAME': env("DJANGO_DATABASE_NAME"),
+        'USER': env("DJANGO_DATABASE_USER"),
+        'PASSWORD': env("DJANGO_DATABASE_PASSWORD"),
+        'HOST': env("DJANGO_DATABASE_HOST"),
+        'PORT': env("DJANGO_DATABASE_PORT")
     }
 }
-
-
 
 
 # Password validation
