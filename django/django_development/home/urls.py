@@ -2,6 +2,6 @@
 urls for home page
 """
 from django.urls import path
-from .views import home_page_view
+from .views import HomeView
 
-urlpatterns = [path('', home_page_view, name='home')]
+urlpatterns = [path('', HomeView.as_view(), name='home')]

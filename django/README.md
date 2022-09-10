@@ -210,9 +210,15 @@ docker-compose exec django python manage.py migrate
 
 # testing
 
-docker tests
+docker tests all
 
 ```
 docker-compose exec django python manage.py test
+```
+
+docker test app 
+
+```
+docker-compose exec django python manage.py test home
 ```
 
