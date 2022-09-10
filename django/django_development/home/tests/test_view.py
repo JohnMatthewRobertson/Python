@@ -2,9 +2,9 @@
 TODO
 """
 from urllib import response
+from home.views import HomeView, AboutView
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
-from home.views import HomeView, AboutView
 
 
 # Create your tests here.
@@ -37,6 +37,7 @@ class HomeTests(SimpleTestCase):
         view = resolve('/')
         self.assertEqual(view.func.__name__, HomeView.as_view().__name__)
 
+
 class AboutTests(SimpleTestCase):
     """TODO"""
 
@@ -44,7 +45,6 @@ class AboutTests(SimpleTestCase):
         """TODO"""
         url = reverse('about')
         self.response = self.client.get(url)
-
 
     def test_about_status_code(self):
         """TODO"""

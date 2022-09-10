@@ -9,11 +9,13 @@ from .forms import CustomUserCreationForm, CustomUserChangeForm
 
 CustomUser = get_user_model()
 
+
 class CustomUserAdmin(UserAdmin):
     """TODO"""
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
     model = CustomUser
-    list_dispplay = ['email', 'username',]
+    list_dispplay = ['email', 'username', ]
+
 
 admin.site.register(CustomUser, CustomUserAdmin)

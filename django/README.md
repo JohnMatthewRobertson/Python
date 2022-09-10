@@ -50,7 +50,13 @@ pylint ./django_development --ignore=.env > static_code_analysis_output/pylint_o
 safety
 
 ```
-safety check > static_code_analysis_output/safety_output.txt
+safety check > ./static_code_analysis_output/safety_output.txt
+```
+
+safety docker
+
+```
+docker-compose exec django safety check > ./static_code_analysis_output/safety_output.txt
 ```
 
 bandit
@@ -64,11 +70,11 @@ bandit -r ./django_development > static_code_analysis_output/bandit_output.txt
 test coverage
 
 ```
-coverage run --source="." manage.py test
+docker-compose exec django coverage run --source="." manage.py test
 ```
 
 ```
-coverage report > ../static_code_analysis_output/coverage_output.txt
+docker-compose exec django coverage report > ./static_code_analysis_output/coverage_output.txt
 ```
 
 

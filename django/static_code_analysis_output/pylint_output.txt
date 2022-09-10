@@ -1,14 +1,36 @@
 ************* Module manage
 django_development\manage.py:11:8: C0415: Import outside toplevel (django.core.management.execute_from_command_line) (import-outside-toplevel)
+************* Module accounts.forms
+django_development\accounts\forms.py:10:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+django_development\accounts\forms.py:18:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+************* Module accounts.models
+django_development\accounts\models.py:12:4: W0107: Unnecessary pass statement (unnecessary-pass)
+django_development\accounts\models.py:5:0: W0611: Unused models imported from django.db (unused-import)
+************* Module accounts.views
+django_development\accounts\views.py:9:0: R0901: Too many ancestors (10/7) (too-many-ancestors)
+************* Module accounts.migrations.0001_initial
+django_development\accounts\migrations\0001_initial.py:21:0: C0301: Line too long (117/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:23:0: C0301: Line too long (103/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:24:0: C0301: Line too long (196/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:25:0: C0301: Line too long (329/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:26:0: C0301: Line too long (104/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:27:0: C0301: Line too long (102/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:28:0: C0301: Line too long (103/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:29:0: C0301: Line too long (165/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:30:0: C0301: Line too long (203/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:31:0: C0301: Line too long (117/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:32:0: C0301: Line too long (266/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:33:0: C0301: Line too long (229/100) (line-too-long)
+django_development\accounts\migrations\0001_initial.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+django_development\accounts\migrations\0001_initial.py:1:0: C0103: Module name "0001_initial" doesn't conform to snake_case naming style (invalid-name)
+django_development\accounts\migrations\0001_initial.py:9:0: C0115: Missing class docstring (missing-class-docstring)
 ************* Module home.admin
 django_development\home\admin.py:4:0: W0611: Unused admin imported from django.contrib (unused-import)
 ************* Module home.models
 django_development\home\models.py:4:0: W0611: Unused models imported from django.db (unused-import)
-************* Module home.tests
-django_development\home\tests.py:4:0: W0611: Unused TestCase imported from django.test (unused-import)
-************* Module home.views
-django_development\home\views.py:9:19: W0613: Unused argument 'request' (unused-argument)
+************* Module home.tests.test_view
+django_development\home\tests\test_view.py:4:0: W0611: Unused response imported from urllib (unused-import)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.12/10 (previous run: 8.95/10, +0.18)
+Your code has been rated at 8.70/10 (previous run: 8.53/10, +0.16)
 

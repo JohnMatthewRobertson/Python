@@ -1,6 +1,6 @@
 """TODO"""
-from django.urls import path
 from accounts.views import SignupView
+from django.urls import path
 
 
-urlpatterns = [path('signup/', SignupView.as_view(), name='signup'),]
+urlpatterns = [path('signup/', SignupView.as_view(), name='signup'), ]

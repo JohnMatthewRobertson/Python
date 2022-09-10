@@ -28,8 +28,8 @@ https://pyup.io
   -> c:\users\couga\.virtualenvs\django_development-n3l5-hhl\lib\site-packages
 
   Using non-commercial database
-  Found and scanned 46 packages
-  Timestamp 2022-09-09 17:03:20
+  Found and scanned 63 packages
+  Timestamp 2022-09-10 21:27:39
   0 vulnerabilities found
   0 vulnerabilities ignored
 +==============================================================================+

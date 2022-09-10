@@ -71,7 +71,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # default looks for templates in each app 
+        # default looks for templates in each app
         # 'DIRS': [],
         # switched to centralised templates folder django will still look in each app
         'DIRS': [str(BASE_DIR.joinpath('templates'))],
