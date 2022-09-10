@@ -11,6 +11,9 @@ pylint = "*"
 flake8 = "*"
 bandit = "*"
 safety = "*"
+coverage = "*"
+selenium = "*"
+webdriver-manager = "*"
 
 [dev-packages]
 

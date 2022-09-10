@@ -59,6 +59,18 @@ bandit
 bandit -r ./django_development > static_code_analysis_output/bandit_output.txt
 ```
 
+# python test coverage 
+
+test coverage
+
+```
+coverage run --source="." manage.py test
+```
+
+```
+coverage report > ../static_code_analysis_output/coverage_output.txt
+```
+
 
 
 # django
@@ -196,8 +208,11 @@ docker-compose exec django python manage.py makemigrations accounts
 docker-compose exec django python manage.py migrate
 ```
 
+# testing
+
 docker tests
 
 ```
 docker-compose exec django python manage.py test
 ```
+
