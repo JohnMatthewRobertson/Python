@@ -42,9 +42,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # 3rd party
+    'crispy_forms',
+
+    # local apps
     'home',
     'accounts',
 ]
+
+# django crispy forms setting
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
@@ -141,6 +149,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# defines location in local development
+STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
+
+# defines location for production
+STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+
+# though implicitly set recommended to explicitly set it
+STATICFILES_FINDERS = [
+    # uses STATICFILES_DIR setting
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    # search for any directory named static with an app
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -29,6 +30,7 @@
   </ul>
 
   <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="{% url 'about' %}"> About</a></li>
     {% if user.is_authenticated %}
       <li class="nav-item"><a class="nav-link disabled" href="#">{{ user.email}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}"> Log Out</a></li>

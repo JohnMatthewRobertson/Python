@@ -1,5 +1,7 @@
 {% extends '_base.html' %}
 
+{% load static %}
+
 {% block title %}
     Home
 {% endblock title %}
@@ -11,6 +13,7 @@
     <div class="container mt-5 mb-5">
         <div class="jumbotron">
             <h1 class="d-flex justify-content-center">Home</h1>
+            <img class="img-fluid" src="{% static 'images/python_logo.png' %}">
         </div>
     </div>
     
