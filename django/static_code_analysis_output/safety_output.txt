@@ -1,0 +1,47 @@
++==============================================================================+
+
+                               /$$$$$$            /$$
+                              /$$__  $$          | $$
+           /$$$$$$$  /$$$$$$ | $$  \__//$$$$$$  /$$$$$$   /$$   /$$
+          /$$_____/ |____  $$| $$$$   /$$__  $$|_  $$_/  | $$  | $$
+         |  $$$$$$   /$$$$$$$| $$_/  | $$$$$$$$  | $$    | $$  | $$
+          \____  $$ /$$__  $$| $$    | $$_____/  | $$ /$$| $$  | $$
+          /$$$$$$$/|  $$$$$$$| $$    |  $$$$$$$  |  $$$$/|  $$$$$$$
+         |_______/  \_______/|__/     \_______/   \___/   \____  $$
+                                                          /$$  | $$
+                                                         |  $$$$$$/
+  by pyup.io                                              \______/
+
++==============================================================================+
+
+ REPORT 
+
+  You are using Safety's free vulnerability database. This data is
+outdated, limited, and 
+  licensed for non-commercial use only.
+  All commercial projects must sign up and get an API key at
+https://pyup.io
+
+  Safety v2.1.1 is scanning for Vulnerabilities...
+  Scanning dependencies in your environment:
+
+  -> c:\users\couga\.virtualenvs\django_development-n3l5-hhl\lib\site-packages
+
+  Using non-commercial database
+  Found and scanned 63 packages
+  Timestamp 2022-09-10 21:27:39
+  0 vulnerabilities found
+  0 vulnerabilities ignored
++==============================================================================+
+
+ No known security vulnerabilities found. 
+
++==============================================================================+
+
+  You are using Safety's free vulnerability database. This data is
+outdated, limited, and 
+  licensed for non-commercial use only.
+  All commercial projects must sign up and get an API key at
+https://pyup.io
+
++==============================================================================+
