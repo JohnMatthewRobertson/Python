@@ -31,6 +31,7 @@
 
   <ul class="navbar-nav ms-auto">
     <li class="nav-item"><a class="nav-link" href="{% url 'about' %}"> About</a></li>
+    <li class="nav-item"><a class="nav-link" href="{% url 'book_list' %}"> Book List</a></li>
     {% if user.is_authenticated %}
       <li class="nav-item"><a class="nav-link disabled" href="#">{{ user.email}}</a></li>
       <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}"> Log Out</a></li>

@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     # local apps
     'home',
     'accounts',
+    'books',
 ]
 
 # django crispy forms setting

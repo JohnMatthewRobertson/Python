@@ -25,4 +25,5 @@ urlpatterns = [
 
     # apps
     path('', include('home.urls')),
+    path('books/', include('books.urls')),
 ]
