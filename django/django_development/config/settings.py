@@ -63,6 +63,7 @@ SITE_ID = 1
 
 # default redirects
 LOGIN_REDIRECT_URL = 'home'
+
 LOGOUT_REDIRECT_URL = 'home'
 
 # account logout redirect overrides logout redirect url
@@ -211,6 +212,10 @@ STATICFILES_FINDERS = [
     # search for any directory named static with an app
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

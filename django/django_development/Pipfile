@@ -16,6 +16,7 @@ selenium = "*"
 webdriver-manager = "*"
 django-crispy-forms = "*"
 django-allauth = "*"
+pillow = "*"
 
 [dev-packages]
 
