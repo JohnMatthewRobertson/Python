@@ -17,6 +17,7 @@ webdriver-manager = "*"
 django-crispy-forms = "*"
 django-allauth = "*"
 pillow = "*"
+django-debug-toolbar = "*"
 
 [dev-packages]
 
