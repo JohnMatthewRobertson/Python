@@ -236,3 +236,11 @@ if test are sluggish setUpTestData() could optimize over setUp()
 docker-compose exec django python manage.py collectstatic
 ```
 
+# deployment 
+
+check django
+
+```
+docker-compose exec django python manage.py check --deploy
+
+```

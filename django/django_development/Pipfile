@@ -18,6 +18,8 @@ django-crispy-forms = "*"
 django-allauth = "*"
 pillow = "*"
 django-debug-toolbar = "*"
+whitenoise = "*"
+gunicorn = "*"
 
 [dev-packages]
 
