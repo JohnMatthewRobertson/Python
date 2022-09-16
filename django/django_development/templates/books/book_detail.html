@@ -23,6 +23,17 @@
             <p>Price: {{ book.price }}</p>
         </div>
     </div>
+
+    <div>
+        <div class="book-detail">
+            <h3>Reviews</h3>
+            <ul>
+                {% for review in book.reviews.all %}
+                <li>{{ review.review }} ({{ review.author }})</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
     
 </div>
 
