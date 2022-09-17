@@ -1,36 +1,91 @@
 ************* Module manage
-django_development\manage.py:11:8: C0415: Import outside toplevel (django.core.management.execute_from_command_line) (import-outside-toplevel)
+django_development/manage.py:11:8: C0415: Import outside toplevel (django.core.management.execute_from_command_line) (import-outside-toplevel)
 ************* Module accounts.forms
-django_development\accounts\forms.py:10:4: R0903: Too few public methods (0/2) (too-few-public-methods)
-django_development\accounts\forms.py:18:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+django_development/accounts/forms.py:10:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+django_development/accounts/forms.py:18:4: R0903: Too few public methods (0/2) (too-few-public-methods)
 ************* Module accounts.models
-django_development\accounts\models.py:12:4: W0107: Unnecessary pass statement (unnecessary-pass)
-django_development\accounts\models.py:5:0: W0611: Unused models imported from django.db (unused-import)
-************* Module accounts.views
-django_development\accounts\views.py:9:0: R0901: Too many ancestors (10/7) (too-many-ancestors)
+django_development/accounts/models.py:12:4: W0107: Unnecessary pass statement (unnecessary-pass)
+django_development/accounts/models.py:5:0: W0611: Unused models imported from django.db (unused-import)
 ************* Module accounts.migrations.0001_initial
-django_development\accounts\migrations\0001_initial.py:21:0: C0301: Line too long (117/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:23:0: C0301: Line too long (103/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:24:0: C0301: Line too long (196/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:25:0: C0301: Line too long (329/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:26:0: C0301: Line too long (104/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:27:0: C0301: Line too long (102/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:28:0: C0301: Line too long (103/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:29:0: C0301: Line too long (165/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:30:0: C0301: Line too long (203/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:31:0: C0301: Line too long (117/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:32:0: C0301: Line too long (266/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:33:0: C0301: Line too long (229/100) (line-too-long)
-django_development\accounts\migrations\0001_initial.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-django_development\accounts\migrations\0001_initial.py:1:0: C0103: Module name "0001_initial" doesn't conform to snake_case naming style (invalid-name)
-django_development\accounts\migrations\0001_initial.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+django_development/accounts/migrations/0001_initial.py:21:0: C0301: Line too long (117/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:23:0: C0301: Line too long (103/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:24:0: C0301: Line too long (196/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:25:0: C0301: Line too long (329/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:26:0: C0301: Line too long (104/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:27:0: C0301: Line too long (102/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:28:0: C0301: Line too long (103/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:29:0: C0301: Line too long (165/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:30:0: C0301: Line too long (203/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:31:0: C0301: Line too long (117/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:32:0: C0301: Line too long (266/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:33:0: C0301: Line too long (229/100) (line-too-long)
+django_development/accounts/migrations/0001_initial.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+django_development/accounts/migrations/0001_initial.py:1:0: C0103: Module name "0001_initial" doesn't conform to snake_case naming style (invalid-name)
+django_development/accounts/migrations/0001_initial.py:9:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module accounts.tests.test_model
+django_development/accounts/tests/test_model.py:59:8: W0612: Unused variable 'new_user' (unused-variable)
+django_development/accounts/tests/test_model.py:4:0: W0611: Unused resolve imported from django.urls (unused-import)
+************* Module books.apps
+django_development/books/apps.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+django_development/books/apps.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module books.models
+django_development/books/models.py:42:0: C0304: Final newline missing (missing-final-newline)
+django_development/books/models.py:22:4: C0115: Missing class docstring (missing-class-docstring)
+django_development/books/models.py:22:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+django_development/books/models.py:25:4: E0307: __str__ does not return str (invalid-str-returned)
+django_development/books/models.py:40:4: E0307: __str__ does not return str (invalid-str-returned)
+************* Module books.urls
+django_development/books/urls.py:7:0: C0304: Final newline missing (missing-final-newline)
+************* Module books.views
+django_development/books/views.py:31:0: C0303: Trailing whitespace (trailing-whitespace)
+django_development/books/views.py:10:0: R0901: Too many ancestors (9/7) (too-many-ancestors)
+django_development/books/views.py:17:0: R0901: Too many ancestors (10/7) (too-many-ancestors)
+django_development/books/views.py:34:15: E1101: Class 'Book' has no 'objects' member (no-member)
+************* Module books.migrations.0001_initial
+django_development/books/migrations/0001_initial.py:18:0: C0301: Line too long (112/100) (line-too-long)
+django_development/books/migrations/0001_initial.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+django_development/books/migrations/0001_initial.py:1:0: C0103: Module name "0001_initial" doesn't conform to snake_case naming style (invalid-name)
+django_development/books/migrations/0001_initial.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+django_development/books/migrations/0001_initial.py:4:0: C0411: standard import "import uuid" should be placed before "from django.db import migrations, models" (wrong-import-order)
+************* Module books.migrations.0002_review
+django_development/books/migrations/0002_review.py:19:0: C0301: Line too long (117/100) (line-too-long)
+django_development/books/migrations/0002_review.py:21:0: C0301: Line too long (120/100) (line-too-long)
+django_development/books/migrations/0002_review.py:22:0: C0301: Line too long (130/100) (line-too-long)
+django_development/books/migrations/0002_review.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+django_development/books/migrations/0002_review.py:1:0: C0103: Module name "0002_review" doesn't conform to snake_case naming style (invalid-name)
+django_development/books/migrations/0002_review.py:8:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module books.migrations.0003_book_cover
+django_development/books/migrations/0003_book_cover.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+django_development/books/migrations/0003_book_cover.py:1:0: C0103: Module name "0003_book_cover" doesn't conform to snake_case naming style (invalid-name)
+django_development/books/migrations/0003_book_cover.py:6:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module books.migrations.0004_alter_book_options
+django_development/books/migrations/0004_alter_book_options.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+django_development/books/migrations/0004_alter_book_options.py:1:0: C0103: Module name "0004_alter_book_options" doesn't conform to snake_case naming style (invalid-name)
+django_development/books/migrations/0004_alter_book_options.py:6:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module books.tests.test_view
+django_development/books/tests/test_view.py:14:0: C0301: Line too long (133/100) (line-too-long)
+django_development/books/tests/test_view.py:66:0: C0305: Trailing newlines (trailing-newlines)
+django_development/books/tests/test_view.py:15:20: E1101: Class 'Book' has no 'objects' member (no-member)
+django_development/books/tests/test_view.py:22:20: E1101: Class 'Book' has no 'objects' member (no-member)
+django_development/books/tests/test_view.py:28:22: E1101: Class 'Review' has no 'objects' member (no-member)
+django_development/books/tests/test_view.py:35:4: C0116: Missing function or method docstring (missing-function-docstring)
+django_development/books/tests/test_view.py:42:4: C0116: Missing function or method docstring (missing-function-docstring)
+django_development/books/tests/test_view.py:46:39: C0209: Formatting a regular string which could be a f-string (consider-using-f-string)
+django_development/books/tests/test_view.py:47:35: C0209: Formatting a regular string which could be a f-string (consider-using-f-string)
+django_development/books/tests/test_view.py:50:4: C0116: Missing function or method docstring (missing-function-docstring)
+django_development/books/tests/test_view.py:4:0: W0611: Unused Client imported from django.test (unused-import)
+************* Module config.settings
+django_development/config/settings.py:17:0: C0411: standard import "import socket" should be placed before "import environ" (wrong-import-order)
+************* Module config.urls
+django_development/config/urls.py:19:17: C0303: Trailing whitespace (trailing-whitespace)
+django_development/config/urls.py:21:42: C0303: Trailing whitespace (trailing-whitespace)
 ************* Module home.admin
-django_development\home\admin.py:4:0: W0611: Unused admin imported from django.contrib (unused-import)
+django_development/home/admin.py:4:0: W0611: Unused admin imported from django.contrib (unused-import)
 ************* Module home.models
-django_development\home\models.py:4:0: W0611: Unused models imported from django.db (unused-import)
+django_development/home/models.py:4:0: W0611: Unused models imported from django.db (unused-import)
 ************* Module home.tests.test_view
-django_development\home\tests\test_view.py:4:0: W0611: Unused response imported from urllib (unused-import)
+django_development/home/tests/test_view.py:4:0: W0611: Unused response imported from urllib (unused-import)
 
-------------------------------------------------------------------
-Your code has been rated at 8.70/10 (previous run: 8.53/10, +0.16)
+-----------------------------------
+Your code has been rated at 7.06/10
 

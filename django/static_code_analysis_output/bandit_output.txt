@@ -1,47 +1,76 @@
-Run started:2022-09-10 20:28:21.698595
+Run started:2022-09-17 15:42:33.897172
 
 Test results:
 >> Issue: [B106:hardcoded_password_funcarg] Possible hardcoded password: 'testpass123'
    Severity: Low   Confidence: Medium
    CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
-   Location: ./django_development\accounts\tests\test_model.py:17:15
+   Location: ./django_development/accounts/tests/test_model.py:15:15
    More Info: https://bandit.readthedocs.io/en/1.7.4/plugins/b106_hardcoded_password_funcarg.html
-16	        user_standard = get_user_model()
-17	        user = user_standard.objects.create_user(
-18	            username='will',
-19	            email='will@email.com',
-20	            password='testpass123'
-21	        )
+14	        user_standard = get_user_model()
+15	        user = user_standard.objects.create_user(
+16	            username='will',
+17	            email='will@email.com',
+18	            password='testpass123'
+19	        )
 
 --------------------------------------------------
 >> Issue: [B106:hardcoded_password_funcarg] Possible hardcoded password: 'testpass123'
    Severity: Low   Confidence: Medium
    CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
-   Location: ./django_development\accounts\tests\test_model.py:31:15
+   Location: ./django_development/accounts/tests/test_model.py:29:15
    More Info: https://bandit.readthedocs.io/en/1.7.4/plugins/b106_hardcoded_password_funcarg.html
-30	        user_admin = get_user_model()
-31	        user = user_admin.objects.create_superuser(
-32	            username = 'superadmin',
-33	            email = 'superadmin@email.com',
-34	            password = 'testpass123'
-35	        )
+28	        user_admin = get_user_model()
+29	        user = user_admin.objects.create_superuser(username='superadmin',
+30	                                                   email='superadmin@email.com',
+31	                                                   password='testpass123'
+32	                                                   )
+
+--------------------------------------------------
+>> Issue: [B106:hardcoded_password_funcarg] Possible hardcoded password: 'testpass123'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   Location: ./django_development/books/tests/test_view.py:14:20
+   More Info: https://bandit.readthedocs.io/en/1.7.4/plugins/b106_hardcoded_password_funcarg.html
+13	        """TODO"""
+14	        self.user = get_user_model().objects.create_user(username='reviewuser', email='reviewuser@email.com', password='testpass123')
+15	        self.book = Book.objects.create(
+
+--------------------------------------------------
+>> Issue: [B106:hardcoded_password_funcarg] Possible hardcoded password: 'testpass123'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   Location: ./django_development/books/tests/test_view.py:36:8
+   More Info: https://bandit.readthedocs.io/en/1.7.4/plugins/b106_hardcoded_password_funcarg.html
+35	    def test_book_list_view_for_logged_in_user(self):
+36	        self.client.login(email='reviewuser@email.com', password='testpass123')
+37	        response = self.client.get(reverse('book_list'))
+
+--------------------------------------------------
+>> Issue: [B106:hardcoded_password_funcarg] Possible hardcoded password: 'testpass123'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   Location: ./django_development/books/tests/test_view.py:51:8
+   More Info: https://bandit.readthedocs.io/en/1.7.4/plugins/b106_hardcoded_password_funcarg.html
+50	    def test_book_detail_view_with_permissions(self):
+51	        self.client.login(email='reviewuser@email.com', password='testpass123')
+52	        self.user.user_permissions.add(self.special_permission)
 
 --------------------------------------------------
 
 Code scanned:
-	Total lines of code: 397
+	Total lines of code: 614
 	Total lines skipped (#nosec): 0
 	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
 
 Run metrics:
 	Total issues (by severity):
 		Undefined: 0
-		Low: 2
+		Low: 5
 		Medium: 0
 		High: 0
 	Total issues (by confidence):
 		Undefined: 0
 		Low: 0
-		Medium: 2
+		Medium: 5
 		High: 0
 Files skipped (0):
