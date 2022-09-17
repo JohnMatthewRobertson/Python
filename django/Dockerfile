@@ -1,8 +1,5 @@
-# run this file with docker build .
 # pull base image
 FROM python:3.9
-
-# set environment variables
 
 # ensure console output is not buffered by Docker
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -16,6 +13,9 @@ WORKDIR /code
 # copy project folder into working directory of the image
 COPY django_development /code/
 
-# install dependencies 
+# upgrade pip
+RUN pip install --upgrade pip
+
+# install pipenv and install existing pipfile into environment
 RUN pip install pipenv && pipenv install --system
 
