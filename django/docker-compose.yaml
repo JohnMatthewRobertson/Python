@@ -5,8 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     working_dir: /code/django_development
-    #command: 'python manage.py runserver 0.0.0.0:${DJANGO_CONTAINER_PORT}'
-    command: 'gunicorn config.wsgi -b 0.0.0.0:${DJANGO_CONTAINER_PORT}'
+    command: 'gunicorn config.wsgi -b 0.0.0.0:${DJANGO_CONTAINER_PORT} -w 4'
     ports:
       - ${DJANGO_HOST_PORT}:${DJANGO_CONTAINER_PORT}
     volumes:

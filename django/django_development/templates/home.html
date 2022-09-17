@@ -2,9 +2,7 @@
 
 {% load static %}
 
-{% block title %}
-    Home
-{% endblock title %}
+{% block title %}Home{% endblock title %}
 
 {% block content %}
 
@@ -16,24 +14,15 @@
             <img class="img-fluid" src="{% static 'images/python_logo.png' %}">
         </div>
     </div>
-    
 
     <form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="get">
-        <input name="q" class="form-control mr-sm-2" type="text"
-        placeholder="Search"
-        aria-label="Search">
-        </form>
+        <input name="q" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    </form>
+
 </div>
-
-
 
 {% endblock content %}
 
-
 {% block scripts %}
-  {{ block.super }} 
+    {{ block.super }}
 {% endblock %}
-
-
-
-
