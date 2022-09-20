@@ -9,6 +9,8 @@ bandit = "*"
 pylint = "*"
 flake8 = "*"
 coverage = "*"
+numpy = "*"
+matplotlib = "*"
 
 [dev-packages]
 
